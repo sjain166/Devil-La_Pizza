@@ -3,10 +3,10 @@ CSE360 Final Project
 Devil's La Pizza
 
 Team Members: 
-Siddharth Jain
-Aryan Gupta 
-Dev Malik
-Pal Neema 
+Siddharth Jain,
+Aryan Gupta,
+Dev Malik,
+Pal Neema, and
 Sai Sumant Kancharla
 
 Prototype Picture: 
