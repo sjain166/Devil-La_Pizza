@@ -13,6 +13,10 @@ Prototype Picture:
 
 ![WhatsApp Image 2022-11-13 at 6 35 27 PM](https://user-images.githubusercontent.com/82925076/201557516-ceee0582-c4b5-47e2-ab98-b1486ad4d7b3.jpeg)
 
+To Run the Project, download the Project Folder:
+Navigate to the Loading Folder, and Run the Loading.java, as that is the entry page of the application.
+
+
 
 
 
