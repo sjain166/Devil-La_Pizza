@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1370.0" style="-fx-background-color: #1D3557;" stylesheets="@../Resources/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyAccount.MyAccountFXMLController">
+   <children>
+      <Label fx:id="uPass" layoutX="80.0" layoutY="592.0" prefHeight="72.0" prefWidth="593.0" style="-fx-background-color: #FFFDD0; -fx-font-size: 25;" text="PASSWORD:">
+         <font>
+            <Font name="Courier New Bold Italic" size="38.0" />
+         </font>
+         <styleClass>
+            <String fx:value="menuCard" />
+            <String fx:value="menu_fontsize" />
+            <String fx:value="text_decoration" />
+            <String fx:value="titleUnderline" />
+         </styleClass>
+      </Label>
+      <Label fx:id="uMail" layoutX="739.0" layoutY="494.0" prefHeight="72.0" prefWidth="594.0" style="-fx-background-color: #FFFDD0; -fx-font-size: 25;" text="EMAIL: ">
+         <font>
+            <Font name="Courier New Bold Italic" size="38.0" />
+         </font>
+         <styleClass>
+            <String fx:value="menuCard" />
+            <String fx:value="menu_fontsize" />
+            <String fx:value="text_decoration" />
+            <String fx:value="titleUnderline" />
+         </styleClass>
+      </Label>
+      <Label fx:id="uCon" layoutX="738.0" layoutY="592.0" prefHeight="72.0" prefWidth="593.0" style="-fx-background-color: #FFFDD0; -fx-font-size: 25;" text="CONTACT:">
+         <font>
+            <Font name="Courier New Bold Italic" size="38.0" />
+         </font>
+         <styleClass>
+            <String fx:value="menuCard" />
+            <String fx:value="menu_fontsize" />
+            <String fx:value="text_decoration" />
+            <String fx:value="titleUnderline" />
+         </styleClass>
+      </Label>
+      <Label fx:id="uRite" layoutX="80.0" layoutY="495.0" prefHeight="72.0" prefWidth="593.0" style="-fx-background-color: #FFFDD0; -fx-font-size: 25;" text="ASURite:">
+         <font>
+            <Font name="Courier New Bold Italic" size="38.0" />
+         </font>
+         <styleClass>
+            <String fx:value="menuCard" />
+            <String fx:value="menu_fontsize" />
+            <String fx:value="text_decoration" />
+            <String fx:value="titleUnderline" />
+         </styleClass>
+      </Label>
+      <ImageView fitHeight="256.0" fitWidth="297.0" layoutX="578.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/myaccount.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="uName" layoutX="426.0" layoutY="390.0" prefHeight="72.0" prefWidth="593.0" style="-fx-background-color: #FFFDD0; -fx-font-size: 25;" text="NAME:">
+         <font>
+            <Font name="Courier New Bold Italic" size="38.0" />
+         </font>
+         <styleClass>
+            <String fx:value="menuCard" />
+            <String fx:value="menu_fontsize" />
+            <String fx:value="text_decoration" />
+            <String fx:value="titleUnderline" />
+         </styleClass>
+      </Label>
+      <Text fontSmoothingType="LCD" layoutX="444.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tastes Special" textAlignment="CENTER" wrappingWidth="481.13671875">
+         <font>
+            <Font name="Bell MT Bold" size="62.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.6777251184834123" startX="0.3270142180094787" startY="0.6398104265402844">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7631579041481018" green="0.3391812741756439" blue="0.3391812741756439" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7647058963775635" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>
