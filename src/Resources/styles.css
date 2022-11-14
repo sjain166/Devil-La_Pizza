@@ -1,0 +1,70 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.menu_fontsize 
+ {
+     -fx-font-size: 15;
+     -fx-font-family: "Lucida Console";
+     -fx-text-fill: black;
+ } 
+.text 
+ {
+     -fx-font-size: 17;
+     -fx-font-family: "Lucida Console";
+     -fx-text-fill: darkred;
+ }
+ 
+ .text_decoration 
+ {
+     -fx-text-decoration: underline;
+     -fx-text-decoration-color: red;
+ }
+ 
+ .menuText:hover, .menuText:active {
+     -fx-color: red;
+ }
+ 
+ .titleUnderline:hover, .titleUnderline:active {
+     -fx-text-decoration: underline;
+     -fx-text-decoration-color: red;
+ }
+ 
+ .shadow
+ {
+     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10.0, 0.0, 0.0, 10.0);    
+ }
+ 
+ /*Use Fit width and Fit height to adjust*/
+ .pizzaCard
+ {
+     -fx-background-color: floralwhite;
+     -fx-background-radius: 30 30 30 30;
+ }
+ 
+ .menuCard
+ {
+     -fx-background-color: floralwhite;
+     -fx-background-radius: 20 20 20 20;
+ }
+ 
+ .sidesCard
+ {
+     -fx-background-color: floralwhite;
+     -fx-background-radius: 40 40 40 40;
+ }
+ 
+ .rightPane
+ {
+     -fx-text-size: 50;
+     -fx-background-color: darkred;
+     -fx-background-radius: 50 50 50 50;
+     -fx-text-fill: whitesmoke;
+
+ }
+ 
+ 
+
+ 
+ 
+ 

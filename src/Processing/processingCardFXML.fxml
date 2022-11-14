@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="mainBox" prefHeight="132.0" prefWidth="1370.0" stylesheets="@../Resources/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Processing.ProcessingCardFXMLController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="122.0" prefWidth="130.0">
+         <children>
+            <Label fx:id="orderID" alignment="CENTER" contentDisplay="CENTER" prefHeight="85.0" prefWidth="138.0" style="-fx-font-size: 50;" text="20" textAlignment="CENTER" textFill="#009df7">
+               <font>
+                  <Font size="54.0" />
+               </font>
+            </Label>
+            <Label fx:id="orderID1" alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="188.0" style="-fx-font-size: 23;" text="Siddharth" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font size="54.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" prefHeight="200.0" />
+      <VBox prefHeight="132.0" prefWidth="983.0">
+         <children>
+            <HBox prefHeight="34.0" prefWidth="930.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="97.0" text="Pizza :">
+                     <textFill>
+                        <LinearGradient endX="0.5260663507109005" startY="0.9289099526066351">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6282488703727722" green="0.003959551453590393" blue="0.8552631735801697" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9078947305679321" green="0.012609649449586868" blue="0.012609649449586868" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pSize" prefHeight="26.0" prefWidth="75.0" text="Medium" />
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Label fx:id="pName" prefHeight="26.0" prefWidth="167.0" text="Pepperoni Blast" />
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Label fx:id="pQTY" prefHeight="26.0" prefWidth="35.0" text="x10" />
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Label fx:id="pCrust" prefHeight="26.0" prefWidth="163.0" text="Herb and Cheese" />
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Label fx:id="pCStyle" prefHeight="26.0" prefWidth="123.0" text="Hand Tossed" />
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Label fx:id="cType" prefHeight="26.0" prefWidth="135.0" text="Monzzarella" />
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Label fx:id="cQTY" prefHeight="26.0" prefWidth="80.0" text="Regular" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="32.0" prefWidth="906.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="97.0" text="Meat:">
+                     <textFill>
+                        <LinearGradient endX="0.5260663507109005" startY="0.9289099526066351">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6282488703727722" green="0.003959551453590393" blue="0.8552631735801697" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9078947305679321" green="0.012609649449586868" blue="0.012609649449586868" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pMeat" prefHeight="26.0" prefWidth="367.0" text="Chicken, Ham, Pepperoni, Salami" textFill="RED" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="30.0" prefWidth="906.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="97.0" text="Veggies:">
+                     <textFill>
+                        <LinearGradient endX="0.5260663507109005" startY="0.9289099526066351">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6282488703727722" green="0.003959551453590393" blue="0.8552631735801697" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9078947305679321" green="0.012609649449586868" blue="0.012609649449586868" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pVeggie" prefHeight="26.0" prefWidth="740.0" text="Onions, Tomato, Jalapeno, Olives, Pepper, Pineapple, Mushrooms, Spinach" textFill="#115b2c" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="26.0" prefWidth="920.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="97.0" text="Sides:">
+                     <textFill>
+                        <LinearGradient endX="0.5260663507109005" startY="0.9289099526066351">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6282488703727722" green="0.003959551453590393" blue="0.8552631735801697" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9078947305679321" green="0.012609649449586868" blue="0.012609649449586868" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sides" prefHeight="26.0" prefWidth="740.0" text="French Fries" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" prefHeight="200.0" />
+      <VBox prefHeight="132.0" prefWidth="323.0" spacing="8.0" stylesheets="@../Resources/styles.css">
+         <children>
+            <HBox prefHeight="27.0" prefWidth="319.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="140.0" text="Pick-up Time:" textFill="#d32272" />
+                  <Label fx:id="pickupTime" prefHeight="26.0" prefWidth="124.0" text="10:20 P.M." />
+               </children>
+            </HBox>
+            <Label fx:id="orderStat" prefHeight="26.0" prefWidth="316.0" text="Set Order Status :" textFill="#d32272" />
+            <CheckBox fx:id="COOK" mnemonicParsing="false" onAction="#setProceesing" prefHeight="19.0" prefWidth="202.0" styleClass="shadow" stylesheets="@../Resources/styles.css" text="Ready for Cooking" textFill="#d32272" />
+            <CheckBox fx:id="RDP" mnemonicParsing="false" onAction="#setCooking" prefHeight="19.0" prefWidth="197.0" styleClass="shadow" stylesheets="@../Resources/styles.css" text="Ready for Pickup" textFill="#d32272" />
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="sidesCard" />
+      <String fx:value="menuCard" />
+   </styleClass>
+</HBox>
