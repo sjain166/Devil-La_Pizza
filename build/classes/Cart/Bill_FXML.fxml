@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox stylesheets="@../Resources/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cart.Bill_FXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="850.0" stylesheets="@../Resources/styles.css">
+         <children>
+            <HBox layoutX="331.0" layoutY="115.0" prefHeight="365.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="365.0" prefWidth="290.0">
+                     <children>
+                        <ImageView fitHeight="247.0" fitWidth="247.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Resources/chef.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="55.0" prefWidth="188.0" text="Devils' La Pizza" textAlignment="CENTER">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <HBox prefHeight="365.0" prefWidth="665.0">
+                     <children>
+                        <VBox prefHeight="365.0" prefWidth="599.0">
+                           <children>
+                              <HBox prefHeight="30.0" prefWidth="554.0">
+                                 <children>
+                                    <Label prefHeight="29.0" prefWidth="246.0" text="Order For :" />
+                                    <Label fx:id="uName" prefHeight="29.0" prefWidth="267.0" text="Pal Neema" />
+                                    <Label fx:id="oNum" prefHeight="29.0" prefWidth="193.0" text="Order Number:" />
+                                    <Label fx:id="orderNumber" prefHeight="29.0" prefWidth="117.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="25.0" prefWidth="554.0">
+                                 <children>
+                                    <Label prefHeight="24.0" prefWidth="189.0" text="Pizza Name:" />
+                                    <Label fx:id="pName" prefHeight="24.0" prefWidth="157.0" text="Veggie Delight" />
+                                    <Label fx:id="pSize" prefHeight="24.0" prefWidth="147.0" text="Medium" />
+                                    <Label fx:id="pQty" prefHeight="24.0" prefWidth="76.0" text="x5" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="34.0" prefWidth="554.0">
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="198.0" text="Pizza Crust :" />
+                                    <Label fx:id="pCrust" prefHeight="33.0" prefWidth="419.0" text="Veggie Delight" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="25.0" prefWidth="554.0">
+                                 <children>
+                                    <Label prefHeight="24.0" prefWidth="240.0" text="Cooking Style :" />
+                                    <Label fx:id="pCookStyle" prefHeight="24.0" prefWidth="460.0" text="Veggie Delight" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="53.0" prefWidth="444.0">
+                                 <children>
+                                    <Label prefHeight="52.0" prefWidth="213.0" text="Meat :" />
+                                    <TextArea fx:id="pMeat" editable="false" prefHeight="52.0" prefWidth="436.0" stylesheets="@../Resources/styles.css" text="None&#10;asdasd" wrapText="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="47.0" prefWidth="554.0">
+                                 <children>
+                                    <Label prefHeight="46.0" prefWidth="264.0" text="Veggie Toppings :" />
+                                    <TextArea fx:id="pVeggie" editable="false" prefHeight="46.0" prefWidth="486.0" text="Tomato , Onions, etc ..." wrapText="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="25.0" prefWidth="361.0">
+                                 <children>
+                                    <Label prefHeight="24.0" prefWidth="189.0" text="Sides :" />
+                                    <Label fx:id="side1" prefHeight="25.0" prefWidth="168.0" text="French Fries" />
+                                    <Label fx:id="side2" prefHeight="25.0" prefWidth="105.0" text="Soda" />
+                                 </children>
+                              </HBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox prefHeight="151.0" prefWidth="597.0">
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="597.0">
+                                       <children>
+                                          <Label prefHeight="19.0" prefWidth="133.0" text="Base Price:" />
+                                          <Label fx:id="bPrice" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="97.0" text="Pal Neema" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="597.0">
+                                       <children>
+                                          <Label prefHeight="22.0" prefWidth="327.0" text="Price / Extra Veggie Topping :" />
+                                          <Label fx:id="vPrice" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="97.0" text="Pal Neema" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="597.0">
+                                       <children>
+                                          <Label prefHeight="21.0" prefWidth="306.0" text="Price / Extra Meat Topping :" />
+                                          <Label fx:id="mPrice" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="97.0" text="Pal Neema" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="597.0">
+                                       <children>
+                                          <Label prefHeight="21.0" prefWidth="213.0" text="Sides Total Prices:" />
+                                          <Label fx:id="sPrice" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="97.0" text="Pal Neema" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="597.0">
+                                       <children>
+                                          <Label prefHeight="21.0" prefWidth="141.0" text="Tax(+5.6 %):" />
+                                          <Label fx:id="tPrice" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="97.0" text="Pal Neema" />
+                                       </children>
+                                    </HBox>
+                                    <Separator cacheShape="false" centerShape="false" prefHeight="9.0" prefWidth="597.0" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="597.0">
+                                       <children>
+                                          <Label prefHeight="24.0" prefWidth="181.0" style="-fx-font-size: 22;" text="Grand Total:" />
+                                          <Label fx:id="gTotal" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="127.0" style="-fx-font-size: 22;" text="Pal Neema" textAlignment="RIGHT" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="pizzaCard" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </AnchorPane>
+   </children>
+   <styleClass>
+      <String fx:value="text" />
+      <String fx:value="pizzaCard" />
+   </styleClass>
+</HBox>

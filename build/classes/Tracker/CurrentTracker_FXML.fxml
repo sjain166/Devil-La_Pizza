@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="mainBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="1345.0" stylesheets="@../Resources/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tracker.CurrentTracker_FXMLController">
+   <styleClass>
+      <String fx:value="pizzaCard" />
+      <String fx:value="shadow" />
+   </styleClass>
+   <children>
+      <VBox alignment="CENTER" prefHeight="270.0" prefWidth="193.0">
+         <children>
+            <Label fx:id="orderID" alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="184.0" style="-fx-font-size: 19;" styleClass="text" stylesheets="@../Resources/styles.css" text="Order Number : " textAlignment="CENTER">
+               <font>
+                  <Font size="54.0" />
+               </font>
+            </Label>
+            <Label fx:id="orderID1" alignment="CENTER" contentDisplay="CENTER" prefHeight="235.0" prefWidth="170.0" style="-fx-font-size: 65;" text="12" textAlignment="CENTER">
+               <font>
+                  <Font size="54.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" prefHeight="200.0" />
+      <VBox prefHeight="270.0" prefWidth="753.0" styleClass="text" stylesheets="@../Resources/styles.css">
+         <children>
+            <Label fx:id="orderID2" alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="739.0" style="-fx-font-size: 23;" styleClass="text" stylesheets="@../Resources/styles.css" text="Order Description : " textAlignment="CENTER">
+               <font>
+                  <Font size="54.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="235.0" prefWidth="736.0" spacing="5.0">
+               <children>
+                  <ImageView fx:id="image" fitHeight="146.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/chicken%20pizza.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="235.0" prefWidth="589.0">
+                     <children>
+                        <HBox prefHeight="29.0" prefWidth="568.0">
+                           <children>
+                              <HBox prefHeight="29.0" prefWidth="568.0">
+                                 <children>
+                                    <Label prefHeight="24.0" prefWidth="189.0" text="Pizza Name:" />
+                                    <Label fx:id="pName" prefHeight="24.0" prefWidth="157.0" text="Veggie Delight" />
+                                    <Label fx:id="pSize" prefHeight="24.0" prefWidth="147.0" text="Medium" />
+                                    <Label fx:id="pQty" prefHeight="24.0" prefWidth="85.0" text="x5" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="34.0" prefWidth="554.0">
+                           <children>
+                              <Label prefHeight="33.0" prefWidth="198.0" text="Pizza Crust :" />
+                              <Label fx:id="pCrust" prefHeight="33.0" prefWidth="419.0" text="Veggie Delight" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="25.0" prefWidth="554.0">
+                           <children>
+                              <Label prefHeight="24.0" prefWidth="240.0" text="Cooking Style :" />
+                              <Label fx:id="pCookStyle" prefHeight="24.0" prefWidth="460.0" text="Veggie Delight" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="53.0" prefWidth="444.0">
+                           <children>
+                              <Label prefHeight="52.0" prefWidth="213.0" text="Meat :" />
+                              <TextArea fx:id="pMeat" editable="false" prefHeight="52.0" prefWidth="436.0" stylesheets="@../Resources/styles.css" text="None&#10;asdasd" wrapText="true" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="47.0" prefWidth="554.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="264.0" text="Veggie Toppings :" />
+                              <TextArea fx:id="pVeggie" editable="false" prefHeight="46.0" prefWidth="486.0" text="Tomato , Onions, etc ..." wrapText="true" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="25.0" prefWidth="361.0">
+                           <children>
+                              <Label prefHeight="24.0" prefWidth="189.0" text="Sides :" />
+                              <Label fx:id="side1" prefHeight="25.0" prefWidth="168.0" text="French Fries" />
+                              <Label fx:id="side2" prefHeight="25.0" prefWidth="105.0" text="Soda" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" prefHeight="200.0" />
+      <VBox alignment="CENTER" prefHeight="270.0" prefWidth="439.0">
+         <children>
+            <Label fx:id="orderID3" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="182.0" style="-fx-font-size: 19;" styleClass="text" stylesheets="@../Resources/styles.css" text="Order Status : " textAlignment="CENTER">
+               <font>
+                  <Font size="54.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="orderStatGIF" fitHeight="139.0" fitWidth="411.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/result%20(4).gif" />
+               </image></ImageView>
+            <CheckBox fx:id="PKD" disable="true" mnemonicParsing="false" onAction="#orderPickedUp" prefHeight="19.0" prefWidth="202.0" styleClass="shadow" stylesheets="@../Resources/styles.css" text="Order Picked Up" textFill="#d32272" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

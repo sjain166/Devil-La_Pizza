@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1370.0" style="-fx-background-color: #1D3557;" stylesheets="@../Resources/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orderConfirmation.OrderConfirmationController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="456.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tastes Special" textAlignment="CENTER" wrappingWidth="481.13671875">
+         <font>
+            <Font name="Bell MT Bold" size="62.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.6777251184834123" startX="0.3270142180094787" startY="0.6398104265402844">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7631579041481018" green="0.3391812741756439" blue="0.3391812741756439" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7647058963775635" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <HBox alignment="CENTER" layoutY="229.0" prefHeight="342.0" prefWidth="1370.0" style="-fx-font-size: 40;">
+         <children>
+            <ImageView fx:id="emoji1" fitHeight="273.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/giphy.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="textDisplay" prefHeight="92.0" prefWidth="840.0" style="-fx-font-size: 40;" styleClass="menuCard" stylesheets="@../Resources/styles.css" textFill="#44bd2f">
+               <font>
+                  <Font name="Courier New Bold" size="40.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <ImageView fx:id="emoji2" fitHeight="273.0" fitWidth="593.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/happyeating.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1370.0" style="-fx-background-color: #1D3557;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cart.Cart_FXMLController">
+    <stylesheets>
+        <URL value="@/Resources/styles.css" />
+    </stylesheets>
+   <children>
+      <ScrollPane fx:id="scrollPane" layoutX="14.0" layoutY="14.0" prefHeight="777.0" prefWidth="883.0" style="-fx-background-color: #1D3557;" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+         <content>
+            <VBox fx:id="billContainer" prefHeight="1076.0" prefWidth="879.0" spacing="10.0" style="-fx-background-color: #1D3557;" stylesheets="@../Resources/styles.css" />
+         </content>
+      </ScrollPane>
+      <VBox layoutX="904.0" layoutY="89.0" prefHeight="623.0" prefWidth="459.0" spacing="50.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="201.0" prefWidth="459.0" spacing="5.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="206.0" stylesheets="@../Resources/styles.css" text="Changed You Mind ? " />
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="459.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="325.0" stylesheets="@../Resources/styles.css" text="Enter the Order ID to Remove: " />
+                        <TextField fx:id="removeID" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="removeOrder" mnemonicParsing="false" onAction="#RemoveOrder" prefHeight="62.0" prefWidth="182.0" styleClass="rightPane" stylesheets="@../Resources/styles.css" text="Confirm" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="293.0" prefWidth="459.0" spacing="5.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="405.0" stylesheets="@../Resources/styles.css" text="Ready to Order ? Select a Pick-up Time" />
+                  <Label fx:id="timeConfirmation1" alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="422.0" stylesheets="@../Resources/styles.css" text="24:00 Hr Format" textAlignment="CENTER" textFill="#ee0000" />
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="459.0" spacing="15.0">
+                     <children>
+                        <TextField fx:id="hoursText" prefHeight="25.0" prefWidth="80.0" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="54.0" stylesheets="@../Resources/styles.css" text="Hours" />
+                        <TextField fx:id="minText" prefHeight="25.0" prefWidth="80.0" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="21.0" stylesheets="@../Resources/styles.css" text="Min" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="timeConfirmation" alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="422.0" stylesheets="@../Resources/styles.css" textAlignment="CENTER" textFill="#ee0000" />
+                  <Button fx:id="orderButton" mnemonicParsing="false" onAction="#inputTime" prefHeight="62.0" prefWidth="182.0" styleClass="rightPane" stylesheets="@../Resources/styles.css" text="Confirm" />
+               </children>
+            </VBox>
+            <Button fx:id="orderButton2" mnemonicParsing="false" onAction="#placeOrder" prefHeight="62.0" prefWidth="451.0" styleClass="rightPane" stylesheets="@../Resources/styles.css" text="Order Pizzass!!" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

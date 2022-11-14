@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1370.0" style="-fx-background-color: #1D3557;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.Topping_FXMLController">
+   <children>
+      <Pane layoutX="14.0" layoutY="97.0" prefHeight="210.0" prefWidth="984.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Pane layoutY="-3.0" prefHeight="216.0" prefWidth="984.0" style="-fx-background-color: #1D3557;">
+               <children>
+                  <HBox layoutX="1.0" layoutY="-2.0" prefHeight="216.0" prefWidth="984.0" spacing="11.0">
+                     <children>
+                        <VBox fx:id="vd" alignment="TOP_CENTER" onMouseClicked="#handleOnMouseClicked" prefHeight="216.0" prefWidth="176.0" spacing="8.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                           <children>
+                              <ImageView fitHeight="173.0" fitWidth="186.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../Resources/Veggie%20Pizza.png" />
+                                 </image>
+                              </ImageView>
+                              <Label onMouseClicked="#handleOnMouseClicked" prefHeight="28.0" prefWidth="148.0" styleClass="menuText" stylesheets="@../Resources/styles.css" text="Veggie Delight" textAlignment="CENTER" textFill="#ee0000">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="m" alignment="TOP_CENTER" onMouseClicked="#handleOnMouseClicked" prefHeight="216.0" prefWidth="176.0" spacing="8.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                           <children>
+                              <ImageView fitHeight="173.0" fitWidth="186.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../Resources/Margerita%20pizza.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="28.0" prefWidth="106.0" styleClass="menuText" stylesheets="@../Resources/styles.css" text="Margherita" textAlignment="CENTER" textFill="#ee0000">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="byo" alignment="TOP_CENTER" onMouseClicked="#handleOnMouseClicked" prefHeight="216.0" prefWidth="176.0" spacing="8.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                           <children>
+                              <ImageView fitHeight="173.0" fitWidth="186.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../Resources/Cheese%20pizza.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="28.0" prefWidth="150.0" styleClass="menuText" stylesheets="@../Resources/styles.css" text="Build Your Own" textAlignment="CENTER" textFill="#ee0000">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="chi" alignment="TOP_CENTER" onMouseClicked="#handleOnMouseClicked" prefHeight="216.0" prefWidth="176.0" spacing="8.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                           <children>
+                              <ImageView fitHeight="173.0" fitWidth="186.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../Resources/chicken%20pizza.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="28.0" prefWidth="135.0" styleClass="menuText" stylesheets="@../Resources/styles.css" text="Chicken Pizza" textAlignment="CENTER" textFill="#ee0000">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="pe" alignment="TOP_CENTER" onMouseClicked="#handleOnMouseClicked" prefHeight="216.0" prefWidth="177.0" spacing="8.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                           <children>
+                              <ImageView fitHeight="173.0" fitWidth="202.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../Resources/Pepperoni%20pizza.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="28.0" prefWidth="154.0" styleClass="menuText" stylesheets="@../Resources/styles.css" text="Pepperoni Blast" textAlignment="CENTER" textFill="#ee0000">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="318.0" prefHeight="210.0" prefWidth="990.0" style="-fx-background-color: FLORALWHITE;" stylesheets="@../Resources/styles.css">
+         <children>
+            <Separator layoutX="213.0" layoutY="5.0" orientation="VERTICAL" prefHeight="200.0" />
+            <Separator layoutX="396.0" layoutY="5.0" orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="14.0" layoutY="5.0" prefHeight="28.0" prefWidth="153.0" text="Choose a Crust" textFill="#ee0000">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="5.0" prefHeight="28.0" prefWidth="180.0" text="Choose Cook Style" textFill="#ee0000">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="612.0" prefHeight="28.0" prefWidth="171.0" text="Choose Troppings" textFill="#ee0000">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <VBox layoutX="5.0" layoutY="33.0" prefHeight="177.0" prefWidth="211.0" spacing="5.0" styleClass="menu_fontsize" stylesheets="@../Resources/styles.css">
+               <children>
+                  <RadioButton fx:id="garlic" mnemonicParsing="false" onAction="#setCrust" prefHeight="22.0" prefWidth="163.0" styleClass="menu_fontsize" stylesheets="@../Resources/styles.css" text="Garlic Crust">
+                     <font>
+                        <Font name="Bell MT" size="11.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="crust" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="cheese" mnemonicParsing="false" onAction="#setCrust" prefHeight="22.0" prefWidth="167.0" styleClass="menu_fontsize" stylesheets="@../Resources/styles.css" text="Cheese Crust" toggleGroup="$crust">
+                     <font>
+                        <Font name="Bell MT" size="11.0" />
+                     </font></RadioButton>
+                  <RadioButton fx:id="herb" mnemonicParsing="false" onAction="#setCrust" prefHeight="22.0" prefWidth="193.0" styleClass="menu_fontsize" stylesheets="@../Resources/styles.css" text="Herb and Cheese" toggleGroup="$crust">
+                     <font>
+                        <Font name="Bell MT" size="11.0" />
+                     </font></RadioButton>
+                  <RadioButton fx:id="basil" mnemonicParsing="false" onAction="#setCrust" styleClass="menu_fontsize" stylesheets="@../Resources/styles.css" text="Basil Blend" toggleGroup="$crust">
+                     <font>
+                        <Font name="Bell MT" size="11.0" />
+                     </font></RadioButton>
+                  <RadioButton fx:id="asiago" mnemonicParsing="false" onAction="#setCrust" styleClass="menu_fontsize" stylesheets="@../Resources/styles.css" text="Asiago Cheese" toggleGroup="$crust">
+                     <font>
+                        <Font name="Bell MT" size="11.0" />
+                     </font></RadioButton>
+                  <RadioButton fx:id="onionC" mnemonicParsing="false" onAction="#setCrust" styleClass="menu_fontsize" stylesheets="@../Resources/styles.css" text="Onion Crust" toggleGroup="$crust">
+                     <font>
+                        <Font name="Bell MT" size="11.0" />
+                     </font></RadioButton>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Separator layoutX="398.0" layoutY="32.0" prefHeight="0.0" prefWidth="585.0" />
+            <Separator layoutX="535.0" layoutY="33.0" orientation="VERTICAL" prefHeight="177.0" prefWidth="6.0" />
+            <Separator layoutX="685.0" layoutY="34.0" orientation="VERTICAL" prefHeight="175.0" prefWidth="6.0" />
+            <Label layoutX="434.0" layoutY="35.0" prefHeight="28.0" prefWidth="68.0" text="Meat ?" textFill="#ee0000">
+               <font>
+                  <Font name="Bell MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="573.0" layoutY="35.0" prefHeight="28.0" prefWidth="92.0" text="Cheese ?" textFill="#ee0000">
+               <font>
+                  <Font name="Bell MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="786.0" layoutY="35.0" prefHeight="28.0" prefWidth="102.0" text="Veggies ?" textFill="#ee0000">
+               <font>
+                  <Font name="Bell MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <VBox layoutX="224.0" layoutY="44.0" prefHeight="156.0" prefWidth="171.0" spacing="35.0" styleClass="text_decoration" stylesheets="@../Resources/styles.css">
+               <children>
+                  <RadioButton fx:id="pan" mnemonicParsing="false" onAction="#setCookStyle" prefHeight="22.0" prefWidth="154.0" text="Fresh Pan ">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="cookStyle" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="tandoor" mnemonicParsing="false" onAction="#setCookStyle" prefHeight="22.0" prefWidth="184.0" text="Tandoori" toggleGroup="$cookStyle">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="hand" mnemonicParsing="false" onAction="#setCookStyle" text="Hand Tossed" toggleGroup="$cookStyle">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="698.0" layoutY="63.0" prefHeight="140.0" prefWidth="146.0" spacing="12.0">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <CheckBox fx:id="onionsT" mnemonicParsing="false" onAction="#getSelectedToppings" text="Onions">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="jalapenoT" mnemonicParsing="false" onAction="#getSelectedToppings" text="Jalapeno">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="olivesT" mnemonicParsing="false" onAction="#getSelectedToppings" prefHeight="22.0" prefWidth="123.0" text="Olives">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="mushroomT" mnemonicParsing="false" onAction="#getSelectedToppings" text="Mushrooms">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+            <VBox layoutX="837.0" layoutY="61.0" prefHeight="140.0" prefWidth="146.0" spacing="12.0">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <CheckBox fx:id="spinachT" alignment="CENTER" mnemonicParsing="false" onAction="#getSelectedToppings" text="Spinach">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="tomatoT" alignment="CENTER" mnemonicParsing="false" onAction="#getSelectedToppings" text="Tomato">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="pepperT" alignment="CENTER" mnemonicParsing="false" onAction="#getSelectedToppings" text="Pepper">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="pepperG" alignment="CENTER" mnemonicParsing="false" onAction="#getSelectedToppings" prefHeight="22.0" prefWidth="130.0" text="Pineapple">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+            <Label fx:id="cheeseSelected" layoutX="545.0" layoutY="91.0" prefHeight="28.0" prefWidth="135.0" stylesheets="@../Resources/styles.css" text="*Selection*">
+               <font>
+                  <Font name="Bell MT Italic" size="96.0" />
+               </font>
+            </Label>
+            <Label fx:id="cheeseQty" layoutX="547.0" layoutY="166.0" prefHeight="28.0" prefWidth="134.0" stylesheets="@../Resources/styles.css" text="*Selection*">
+               <font>
+                  <Font name="Bell MT Italic" size="1.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cheeseSelection" layoutX="541.0" layoutY="65.0" onAction="#setCheese" prefHeight="25.0" prefWidth="140.0" promptText="Select" styleClass="text_decoration" stylesheets="@../Resources/styles.css" visibleRowCount="12" />
+            <ComboBox fx:id="cheeseQtySelection" layoutX="541.0" layoutY="141.0" onAction="#setQtyCheese" prefHeight="25.0" prefWidth="140.0" promptText="Quantity" styleClass="text_decoration" stylesheets="@../Resources/styles.css" />
+            <VBox layoutX="395.0" layoutY="61.0" prefHeight="140.0" prefWidth="146.0" spacing="12.0">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <CheckBox fx:id="chicken" mnemonicParsing="false" onAction="#getSelectedToppings" prefHeight="22.0" prefWidth="164.0" styleClass="menuText" stylesheets="@../Resources/styles.css" text="Chicken">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="ham" mnemonicParsing="false" onAction="#getSelectedToppings" styleClass="text_decoration" stylesheets="@../Resources/styles.css" text="Ham">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="salami" mnemonicParsing="false" onAction="#getSelectedToppings" styleClass="text_decoration" stylesheets="@../Resources/styles.css" text="Salami">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="pep" mnemonicParsing="false" onAction="#getSelectedToppings" styleClass="text_decoration" stylesheets="@../Resources/styles.css" text="Pepperoni">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+         </children>
+         <styleClass>
+            <String fx:value="text_decoration" />
+            <String fx:value="pizzaCard" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="538.0" prefHeight="216.0" prefWidth="984.0" style="-fx-background-color: #1D3557;">
+         <children>
+            <HBox layoutX="1.0" layoutY="-2.0" prefHeight="216.0" prefWidth="984.0" spacing="2.0">
+               <children>
+                  <VBox fx:id="gb" alignment="TOP_CENTER" onMouseClicked="#setSides" prefHeight="216.0" prefWidth="176.0" spacing="15.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="186.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Resources/breadsticks.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="28.0" prefWidth="187.0" text="Garlic BreadSticks" textAlignment="CENTER" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="cs" alignment="TOP_CENTER" onMouseClicked="#setSides" prefHeight="216.0" prefWidth="176.0" spacing="15.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Resources/cheesesticks.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="28.0" prefWidth="135.0" text="Cheese Sticks" textAlignment="CENTER" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="soda" alignment="TOP_CENTER" onMouseClicked="#setSides" prefHeight="216.0" prefWidth="176.0" spacing="15.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Resources/coke.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="28.0" prefWidth="46.0" text="Soda" textAlignment="CENTER" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="cw" alignment="TOP_CENTER" onMouseClicked="#setSides" prefHeight="216.0" prefWidth="176.0" spacing="15.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Resources/wings.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="28.0" prefWidth="137.0" text="Chicken Wings" textAlignment="CENTER" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="ff" alignment="TOP_CENTER" onMouseClicked="#setSides" prefHeight="216.0" prefWidth="177.0" spacing="15.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="196.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Resources/fries.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="28.0" prefWidth="130.0" text="French Fries" textAlignment="CENTER" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></Pane>
+      <Pane layoutX="1009.0" layoutY="97.0" prefHeight="657.0" prefWidth="347.0" style="-fx-background-color: FLORALWHITE;" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+         <children>
+            <ImageView fitHeight="321.0" fitWidth="410.0" layoutX="-136.0" layoutY="-81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Pan.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pizzaDisplay" blendMode="SRC_ATOP" fitHeight="114.0" fitWidth="116.0" layoutX="16.0" layoutY="15.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+            <VBox alignment="TOP_CENTER" layoutX="136.0" prefHeight="210.0" prefWidth="211.0" spacing="4.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="211.0" spacing="50.0">
+                     <children>
+                        <Label fx:id="size" prefHeight="27.0" prefWidth="152.0" text="Size: Small" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Slider fx:id="sizeSlider" blockIncrement="1.0" majorTickUnit="3.0" max="3.0" minorTickCount="1" onMouseClicked="#setSize" prefHeight="24.0" prefWidth="205.0" showTickMarks="true" snapToTicks="true">
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
+                  </Slider>
+                  <HBox prefHeight="26.0" prefWidth="211.0">
+                     <children>
+                        <Label fx:id="qty" alignment="BASELINE_LEFT" prefHeight="28.0" prefWidth="106.0" text="QTY: 1" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Slider fx:id="qtySlider" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" onMouseClicked="#setQuantity" prefHeight="24.0" prefWidth="205.0" showTickMarks="true" snapToTicks="true">
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
+                  </Slider>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="13.0">
+                     <children>
+                        <Label fx:id="pizzaD" prefHeight="27.0" prefWidth="208.0" style="-fx-font-size: 22;" text="*PIZZA*" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pizzaD11" prefHeight="28.0" prefWidth="189.0" text="*Cooking Style*" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pizzaD1" prefHeight="28.0" prefWidth="211.0" text="*Crust*" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Separator layoutX="3.0" layoutY="209.0" prefHeight="3.0" prefWidth="339.0" />
+            <ImageView fx:id="vegAndNonveg" fitHeight="19.0" fitWidth="16.0" layoutX="12.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/veg.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" layoutX="4.0" layoutY="212.0" prefHeight="216.0" prefWidth="339.0">
+               <children>
+                  <FlowPane fx:id="toppingContainer" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="177.0" prefWidth="347.0" prefWrapLength="200.0" styleClass="shadow" stylesheets="@../Resources/styles.css" />
+                  <Label fx:id="pizzaD111" prefHeight="28.0" prefWidth="223.0" text="* No Cheese Selected*" textAlignment="CENTER" textFill="#ee0000">
+                     <font>
+                        <Font name="Bell MT Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Separator layoutX="4.0" layoutY="441.0" prefHeight="3.0" prefWidth="339.0" />
+            <VBox alignment="CENTER" layoutX="4.0" layoutY="443.0" prefHeight="210.0" prefWidth="339.0" spacing="5.0">
+               <children>
+                  <HBox prefHeight="157.0" prefWidth="339.0">
+                     <children>
+                        <ImageView fx:id="side1" fitHeight="139.0" fitWidth="162.0" onMouseClicked="#setSides" pickOnBounds="true" />
+                        <ImageView fx:id="side2" fitHeight="144.0" fitWidth="177.0" onMouseClicked="#setSides" pickOnBounds="true" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="side1Text" alignment="CENTER" prefHeight="21.0" prefWidth="177.0" text="*Side1*" textAlignment="CENTER" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="side2Text" alignment="CENTER" prefHeight="21.0" prefWidth="190.0" text="*Side2*" textAlignment="CENTER" textFill="#ee0000">
+                           <font>
+                              <Font name="Bell MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#addToCart" prefHeight="21.0" prefWidth="300.0" styleClass="rightPane" stylesheets="@../Resources/styles.css" text="Add To Cart" textAlignment="CENTER" textFill="#314165" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <HBox layoutX="43.0" layoutY="178.0" prefHeight="31.0" prefWidth="89.0">
+               <children>
+                  <Label fx:id="pizzaD121" prefHeight="28.0" prefWidth="68.0" text="\$" textFill="#ee0000">
+                     <font>
+                        <Font name="Bell MT Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pizzaRate" prefHeight="28.0" prefWidth="127.0" text="0.00" textFill="#ee0000">
+                     <font>
+                        <Font name="Bell MT Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Text fontSmoothingType="LCD" layoutX="444.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tastes Special" textAlignment="CENTER" wrappingWidth="481.13671875">
+         <font>
+            <Font name="Bell MT Bold" size="62.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.6777251184834123" startX="0.3270142180094787" startY="0.6398104265402844">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7631579041481018" green="0.3391812741756439" blue="0.3391812741756439" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7647058963775635" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <VBox layoutX="14.0" layoutY="10.0" prefHeight="77.0" prefWidth="292.0" styleClass="titleUnderline" stylesheets="@../Resources/styles.css">
+         <children>
+            <Label prefHeight="28.0" prefWidth="274.0" text="Extra Veggies ? $1/topping" textFill="#fdffb8">
+               <font>
+                  <Font name="Bell MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="28.0" prefWidth="272.0" text="Extra Protein ? $2/topping" textFill="#fdffb8">
+               <font>
+                  <Font name="Bell MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="28.0" prefWidth="272.0" text="Extra Cheese  ? $2" textFill="#fdffb8">
+               <font>
+                  <Font name="Bell MT Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
