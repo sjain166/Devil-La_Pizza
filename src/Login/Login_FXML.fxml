@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1370.0" style="-fx-background-color: #1D3557;" stylesheets="@../Resources/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.Login_FXMLController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="880.0" prefWidth="1370.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane>
+               <children>
+                  <Pane layoutY="1.0" prefHeight="59.0" prefWidth="1370.0" style="-fx-background-color: #E63946;" stylesheets="@../Resources/styles.css">
+                     <children>
+                        <HBox layoutY="-1.0" prefHeight="59.0" prefWidth="1370.0" spacing="30.0" styleClass="text" stylesheets="@../Resources/styles.css">
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="5.0" top="2.0" />
+                           </padding>
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="49.0" prefWidth="179.0" style="-fx-background-color: #E63946;" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                                 <children>
+                                    <ImageView fitHeight="45.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Resources/login.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="loginButton" mnemonicParsing="false" onAction="#goTo" prefHeight="48.0" prefWidth="122.0" style="-fx-background-color: #E63946;" stylesheets="@../Resources/styles.css" text="Logout">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="pizzaCard" />
+                                          <String fx:value="menuText" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="49.0" prefWidth="179.0" style="-fx-background-color: #E63946;" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                                 <children>
+                                    <ImageView fitHeight="45.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Resources/menu.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="menuButton" disable="true" mnemonicParsing="false" onAction="#goTo" prefHeight="48.0" prefWidth="122.0" style="-fx-background-color: #E63946;" stylesheets="@../Resources/styles.css" text="Menu">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="pizzaCard" />
+                                          <String fx:value="menuText" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="49.0" prefWidth="179.0" style="-fx-background-color: #E63946;" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                                 <children>
+                                    <ImageView fitHeight="45.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Resources/tracker.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="trackerButton" disable="true" mnemonicParsing="false" onAction="#goTo" prefHeight="48.0" prefWidth="120.0" style="-fx-background-color: #E63946;" stylesheets="@../Resources/styles.css" text="Tracker">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="pizzaCard" />
+                                          <String fx:value="menuText" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="49.0" prefWidth="179.0" style="-fx-background-color: #E63946;" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                                 <children>
+                                    <ImageView fitHeight="45.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Resources/myaccount.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="account" disable="true" mnemonicParsing="false" onAction="#goTo" prefHeight="48.0" prefWidth="169.0" style="-fx-background-color: #E63946;" stylesheets="@../Resources/styles.css" text="Account">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="pizzaCard" />
+                                          <String fx:value="menuText" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="55.0" prefWidth="140.0" style="-fx-background-color: #E63946;" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                                 <children>
+                                    <ImageView fitHeight="45.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Resources/cart.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="cart" disable="true" mnemonicParsing="false" onAction="#goTo" prefHeight="48.0" prefWidth="122.0" style="-fx-background-color: #E63946;" stylesheets="@../Resources/styles.css" text="Cart">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="pizzaCard" />
+                                          <String fx:value="menuText" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <Separator orientation="VERTICAL" prefHeight="55.0" prefWidth="0.0" />
+                              <Label prefHeight="54.0" prefWidth="128.0" style="-fx-font-size: 25; -fx-font-style: BOLD;" stylesheets="@../Resources/styles.css" text="Welcome:" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="SansSerif Regular" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="userName" prefHeight="54.0" prefWidth="143.0" style="-fx-font-size: 25; -fx-font-style: BOLD;" stylesheets="@../Resources/styles.css" text="User" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="SansSerif Regular" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane fx:id="changePane" prefHeight="814.0" prefWidth="1370.0" stylesheets="@../Resources/styles.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" layoutX="233.0" layoutY="46.0" prefHeight="478.0" prefWidth="890.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resources/admin.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="asuid" depthTest="DISABLE" prefHeight="67.0" prefWidth="493.0" promptText="ASU - ID" style="-fx-font-weight: bold; -fx-text-fill: BLACK;" stylesheets="@../Resources/styles.css">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="132.38" radius="64.9575" width="129.45">
+                                 <input>
+                                    <SepiaTone level="0.0" />
+                                 </input>
+                              </DropShadow>
+                           </effect>
+                           <styleClass>
+                              <String fx:value="pizzaCard" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </TextField>
+                        <PasswordField fx:id="password" depthTest="DISABLE" prefHeight="67.0" prefWidth="493.0" promptText="PASSWORD" style="-fx-font-weight: bold; -fx-text-fill: BLACK;" styleClass="pizzaCard" stylesheets="@../Resources/styles.css">
+                           <effect>
+                              <DropShadow height="132.38" radius="64.9575" width="129.45">
+                                 <input>
+                                    <SepiaTone level="0.0" />
+                                 </input>
+                              </DropShadow>
+                           </effect>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </PasswordField>
+                        <Label onMouseClicked="#resetPassword" prefHeight="35.0" prefWidth="203.0" text="Forgot Password ?" textFill="#00bcd4" underline="true">
+                           <font>
+                              <Font name="SansSerif Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#login" prefHeight="47.0" prefWidth="300.0" styleClass="rightPane" stylesheets="@../Resources/styles.css" text="Login" textAlignment="CENTER" textFill="#314165" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="resetPassBox" alignment="CENTER" layoutX="332.0" layoutY="511.0" prefHeight="269.0" prefWidth="707.0" spacing="4.0" styleClass="pizzaCard" stylesheets="@../Resources/styles.css" visible="false">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="707.0" spacing="20.0">
+                           <children>
+                              <Label prefHeight="19.0" prefWidth="257.0" text="Enter Registered E-Mail:" />
+                              <TextField fx:id="emailInput" prefHeight="25.0" prefWidth="381.0" />
+                           </children>
+                        </HBox>
+                        <Label prefHeight="19.0" prefWidth="548.0" text="If e-mail is valid an OTP will be sent to your E-Mail" />
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="707.0" spacing="20.0">
+                           <children>
+                              <Label prefHeight="19.0" prefWidth="259.0" text="OTP :" />
+                              <TextField fx:id="OTPInput" prefHeight="25.0" prefWidth="381.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="707.0" spacing="20.0">
+                           <children>
+                              <Label prefHeight="19.0" prefWidth="257.0" text="New Password:" />
+                              <TextField fx:id="passWord" prefHeight="25.0" prefWidth="381.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="707.0" spacing="20.0">
+                           <children>
+                              <Label prefHeight="19.0" prefWidth="257.0" text="Confirm Password:" />
+                              <TextField fx:id="passWord2" prefHeight="25.0" prefWidth="381.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="707.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="rOTPButton" mnemonicParsing="false" onAction="#requestOTP" prefHeight="47.0" prefWidth="300.0" styleClass="rightPane" stylesheets="@../Resources/styles.css" text="Request OTP" textAlignment="CENTER" textFill="#314165" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="cPassButton" disable="true" mnemonicParsing="false" onAction="#checkOTP" prefHeight="47.0" prefWidth="300.0" styleClass="rightPane" stylesheets="@../Resources/styles.css" text="Change Password" textAlignment="CENTER" textFill="#314165" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="237.0" fitWidth="232.0" layoutX="-121.0" layoutY="584.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/Margerita%20pizza.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="204.0" fitWidth="239.0" layoutX="-100.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/Veggie%20Pizza.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="221.0" fitWidth="234.0" layoutX="-110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/Pepperoni%20pizza.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="161.0" fitWidth="175.0" layoutX="1210.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/chef.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
